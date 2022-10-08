@@ -4,7 +4,7 @@ import user from '../json/user.json';
 export const App = () => {
   return (
     <div>
-      <Profile user={user} nona={'5'} />
+      <Profile user={user} />
     </div>
   );
 };
