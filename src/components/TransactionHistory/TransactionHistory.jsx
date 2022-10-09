@@ -4,6 +4,7 @@ import {
   TableHeadline,
   TableData,
   TransactionTable,
+  TransactionBodyLine,
 } from './TransactionHistory.styled';
 
 export const TransactionHistory = ({ items }) => {
@@ -19,11 +20,11 @@ export const TransactionHistory = ({ items }) => {
 
       <TableBody>
         {items.map(item => (
-          <tr key={item.id}>
+          <TransactionBodyLine key={item.id}>
             <TableData>{item.type}</TableData>
             <TableData>{item.amount}</TableData>
             <TableData>{item.currency}</TableData>
-          </tr>
+          </TransactionBodyLine>
         ))}
       </TableBody>
     </TransactionTable>
